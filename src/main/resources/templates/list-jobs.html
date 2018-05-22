@@ -10,8 +10,9 @@
 
     <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
 
+    <div th:replace="search :: result-count"></div>
     <!-- TODO #3 - Use the same list display from search.html -->
-
+    <tabel th:replace="search :: search-result"></tabel>
 </div>
 
 </body>
